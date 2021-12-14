@@ -22,6 +22,7 @@
     </div>
 
     <hr class="my-4">
+
     <div>
         <table class="table">
             <thead>
@@ -36,8 +37,8 @@
             <tr th:each="item : ${items}">
                 <td><a href="item.html" th:href="@{/validation/v1/items/{itemId}(itemId=${item.id})}" th:text="${item.id}">회원id</a></td>
                 <td><a href="item.html" th:href="@{|/validation/v1/items/${item.id}|}" th:text="${item.itemName}">상품명</a></td>
-                <td th:text="${item.price}">10000</td>
-                <td th:text="${item.quantity}">10</td>
+                <td th:text="${item.price}">상품 가격</td>
+                <td th:text="${item.quantity}">상품 수량</td>
             </tr>
             </tbody>
         </table>
