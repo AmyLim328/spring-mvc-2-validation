@@ -8,6 +8,7 @@
         .container {
             max-width: 560px;
         }
+
         .field-error {
             border-color: #dc3545;
             color: #dc3545;
@@ -57,12 +58,12 @@
                 <button class="w-100 btn btn-secondary btn-lg"
                         onclick="location.href='items.html'"
                         th:onclick="|location.href='@{/validation/v3/items}'|"
-                        type="button" th:text="#{button.cancel}">취소</button>
+                        type="button" th:text="#{button.cancel}">취소
+                </button>
             </div>
         </div>
-
     </form>
-
 </div> <!-- /container -->
+
 </body>
 </html>
